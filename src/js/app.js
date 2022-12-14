@@ -1,5 +1,11 @@
 import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
-  // This block will be executed once the page is loaded and ready
+ let allClasses = document.querySelectorAll('.price')
+
+for (let price of allClasses) {
+    if (price.classList.contains('hot')) {
+        price.innerHTML += "🔥"
+    };
+}
 });
